@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Tuition Services - Science & English</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">EduPro</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#subjects">Subjects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-title-box">
+                <h1>VIVAN TUITION CLASSES</h1>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for chapters...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subjects" class="subjects">
+        <h2>Study Materials</h2>
+        <div class="subject-grid">
+            <div class="subject-card">
+                <h3>Class 5</h3>
+                <div class="subject-links">
+                    <div class="subject-section">
+                        <div class="subject-header" onclick="toggleSubject(this)">
+                            <h4><i class="fas fa-flask"></i> Science</h4>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="chapters-grid">
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter1.pdf" data-title="Class 5 Science - Chapter 1">
+                                    <i class="fas fa-file-pdf"></i> Chapter 1: Living Things
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter2.pdf" data-title="Class 5 Science - Chapter 2">
+                                    <i class="fas fa-file-pdf"></i> Chapter 2: Plants and Animals
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter3.pdf" data-title="Class 5 Science - Chapter 3">
+                                    <i class="fas fa-file-pdf"></i> Chapter 3: Human Body
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter4.pdf" data-title="Class 5 Science - Chapter 4">
+                                    <i class="fas fa-file-pdf"></i> Chapter 4: Food and Nutrition
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter5.pdf" data-title="Class 5 Science - Chapter 5">
+                                    <i class="fas fa-file-pdf"></i> Chapter 5: Water and Air
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter6.pdf" data-title="Class 5 Science - Chapter 6">
+                                    <i class="fas fa-file-pdf"></i> Chapter 6: Weather and Climate
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter7.pdf" data-title="Class 5 Science - Chapter 7">
+                                    <i class="fas fa-file-pdf"></i> Chapter 7: Light and Sound
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter8.pdf" data-title="Class 5 Science - Chapter 8">
+                                    <i class="fas fa-file-pdf"></i> Chapter 8: Force and Motion
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter9.pdf" data-title="Class 5 Science - Chapter 9">
+                                    <i class="fas fa-file-pdf"></i> Chapter 9: Our Environment
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/science/chapter10.pdf" data-title="Class 5 Science - Chapter 10">
+                                    <i class="fas fa-file-pdf"></i> Chapter 10: Natural Resources
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subject-section">
+                        <div class="subject-header" onclick="toggleSubject(this)">
+                            <h4><i class="fas fa-book"></i> English</h4>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="chapters-grid">
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter1.pdf" data-title="Class 5 English - Chapter 1">
+                                    <i class="fas fa-file-pdf"></i> Chapter 1: Reading Comprehension
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter2.pdf" data-title="Class 5 English - Chapter 2">
+                                    <i class="fas fa-file-pdf"></i> Chapter 2: Grammar Basics
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter3.pdf" data-title="Class 5 English - Chapter 3">
+                                    <i class="fas fa-file-pdf"></i> Chapter 3: Creative Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter4.pdf" data-title="Class 5 English - Chapter 4">
+                                    <i class="fas fa-file-pdf"></i> Chapter 4: Vocabulary Building
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter5.pdf" data-title="Class 5 English - Chapter 5">
+                                    <i class="fas fa-file-pdf"></i> Chapter 5: Story Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter6.pdf" data-title="Class 5 English - Chapter 6">
+                                    <i class="fas fa-file-pdf"></i> Chapter 6: Letter Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter7.pdf" data-title="Class 5 English - Chapter 7">
+                                    <i class="fas fa-file-pdf"></i> Chapter 7: Essay Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter8.pdf" data-title="Class 5 English - Chapter 8">
+                                    <i class="fas fa-file-pdf"></i> Chapter 8: Poetry
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter9.pdf" data-title="Class 5 English - Chapter 9">
+                                    <i class="fas fa-file-pdf"></i> Chapter 9: Comprehension Skills
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class5/english/chapter10.pdf" data-title="Class 5 English - Chapter 10">
+                                    <i class="fas fa-file-pdf"></i> Chapter 10: Language Skills
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subject-card">
+                <h3>Class 6</h3>
+                <div class="subject-links">
+                    <div class="subject-section">
+                        <div class="subject-header" onclick="toggleSubject(this)">
+                            <h4><i class="fas fa-flask"></i> Science</h4>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="chapters-grid">
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter1.pdf" data-title="Class 6 Science - Chapter 1">
+                                    <i class="fas fa-file-pdf"></i> Chapter 1: Matter and Materials
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter2.pdf" data-title="Class 6 Science - Chapter 2">
+                                    <i class="fas fa-file-pdf"></i> Chapter 2: Energy and Forces
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter3.pdf" data-title="Class 6 Science - Chapter 3">
+                                    <i class="fas fa-file-pdf"></i> Chapter 3: Earth and Space
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter4.pdf" data-title="Class 6 Science - Chapter 4">
+                                    <i class="fas fa-file-pdf"></i> Chapter 4: Astronomy
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter5.pdf" data-title="Class 6 Science - Chapter 5">
+                                    <i class="fas fa-file-pdf"></i> Chapter 5: Environmental Science
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter6.pdf" data-title="Class 6 Science - Chapter 6">
+                                    <i class="fas fa-file-pdf"></i> Chapter 6: Biotechnology
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter7.pdf" data-title="Class 6 Science - Chapter 7">
+                                    <i class="fas fa-file-pdf"></i> Chapter 7: Robotics
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter8.pdf" data-title="Class 6 Science - Chapter 8">
+                                    <i class="fas fa-file-pdf"></i> Chapter 8: Nanotechnology
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter9.pdf" data-title="Class 6 Science - Chapter 9">
+                                    <i class="fas fa-file-pdf"></i> Chapter 9: Space Exploration
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/science/chapter10.pdf" data-title="Class 6 Science - Chapter 10">
+                                    <i class="fas fa-file-pdf"></i> Chapter 10: Climate Change
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subject-section">
+                        <div class="subject-header" onclick="toggleSubject(this)">
+                            <h4><i class="fas fa-book"></i> English</h4>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="chapters-grid">
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter1.pdf" data-title="Class 6 English - Chapter 1">
+                                    <i class="fas fa-file-pdf"></i> Chapter 1: Advanced Reading
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter2.pdf" data-title="Class 6 English - Chapter 2">
+                                    <i class="fas fa-file-pdf"></i> Chapter 2: Grammar and Usage
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter3.pdf" data-title="Class 6 English - Chapter 3">
+                                    <i class="fas fa-file-pdf"></i> Chapter 3: Essay Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter4.pdf" data-title="Class 6 English - Chapter 4">
+                                    <i class="fas fa-file-pdf"></i> Chapter 4: Advanced Vocabulary
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter5.pdf" data-title="Class 6 English - Chapter 5">
+                                    <i class="fas fa-file-pdf"></i> Chapter 5: Narrative Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter6.pdf" data-title="Class 6 English - Chapter 6">
+                                    <i class="fas fa-file-pdf"></i> Chapter 6: Persuasive Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter7.pdf" data-title="Class 6 English - Chapter 7">
+                                    <i class="fas fa-file-pdf"></i> Chapter 7: Expository Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter8.pdf" data-title="Class 6 English - Chapter 8">
+                                    <i class="fas fa-file-pdf"></i> Chapter 8: Poetry
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter9.pdf" data-title="Class 6 English - Chapter 9">
+                                    <i class="fas fa-file-pdf"></i> Chapter 9: Advanced Grammar
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class6/english/chapter10.pdf" data-title="Class 6 English - Chapter 10">
+                                    <i class="fas fa-file-pdf"></i> Chapter 10: Creative Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subject-card">
+                <h3>Class 7</h3>
+                <div class="subject-links">
+                    <div class="subject-section">
+                        <div class="subject-header" onclick="toggleSubject(this)">
+                            <h4><i class="fas fa-flask"></i> Science</h4>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="chapters-grid">
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter1.pdf" data-title="Class 7 Science - Chapter 1">
+                                    <i class="fas fa-file-pdf"></i> Chapter 1: Chemical Reactions
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter2.pdf" data-title="Class 7 Science - Chapter 2">
+                                    <i class="fas fa-file-pdf"></i> Chapter 2: Electricity and Magnetism
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter3.pdf" data-title="Class 7 Science - Chapter 3">
+                                    <i class="fas fa-file-pdf"></i> Chapter 3: Ecology and Environment
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter4.pdf" data-title="Class 7 Science - Chapter 4">
+                                    <i class="fas fa-file-pdf"></i> Chapter 4: Biotechnology
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter5.pdf" data-title="Class 7 Science - Chapter 5">
+                                    <i class="fas fa-file-pdf"></i> Chapter 5: Robotics
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter6.pdf" data-title="Class 7 Science - Chapter 6">
+                                    <i class="fas fa-file-pdf"></i> Chapter 6: Nanotechnology
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter7.pdf" data-title="Class 7 Science - Chapter 7">
+                                    <i class="fas fa-file-pdf"></i> Chapter 7: Space Exploration
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter8.pdf" data-title="Class 7 Science - Chapter 8">
+                                    <i class="fas fa-file-pdf"></i> Chapter 8: Climate Change
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter9.pdf" data-title="Class 7 Science - Chapter 9">
+                                    <i class="fas fa-file-pdf"></i> Chapter 9: Environmental Sustainability
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/science/chapter10.pdf" data-title="Class 7 Science - Chapter 10">
+                                    <i class="fas fa-file-pdf"></i> Chapter 10: Future Technologies
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subject-section">
+                        <div class="subject-header" onclick="toggleSubject(this)">
+                            <h4><i class="fas fa-book"></i> English</h4>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="chapters-grid">
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter1.pdf" data-title="Class 7 English - Chapter 1">
+                                    <i class="fas fa-file-pdf"></i> Chapter 1: Literature Analysis
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter2.pdf" data-title="Class 7 English - Chapter 2">
+                                    <i class="fas fa-file-pdf"></i> Chapter 2: Advanced Grammar
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter3.pdf" data-title="Class 7 English - Chapter 3">
+                                    <i class="fas fa-file-pdf"></i> Chapter 3: Creative Writing Skills
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter4.pdf" data-title="Class 7 English - Chapter 4">
+                                    <i class="fas fa-file-pdf"></i> Chapter 4: Advanced Vocabulary
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter5.pdf" data-title="Class 7 English - Chapter 5">
+                                    <i class="fas fa-file-pdf"></i> Chapter 5: Narrative Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter6.pdf" data-title="Class 7 English - Chapter 6">
+                                    <i class="fas fa-file-pdf"></i> Chapter 6: Persuasive Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter7.pdf" data-title="Class 7 English - Chapter 7">
+                                    <i class="fas fa-file-pdf"></i> Chapter 7: Expository Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter8.pdf" data-title="Class 7 English - Chapter 8">
+                                    <i class="fas fa-file-pdf"></i> Chapter 8: Poetry
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter9.pdf" data-title="Class 7 English - Chapter 9">
+                                    <i class="fas fa-file-pdf"></i> Chapter 9: Advanced Grammar
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="pdf-container">
+                                <a href="#" class="subject-link" data-pdf="pdfs/class7/english/chapter10.pdf" data-title="Class 7 English - Chapter 10">
+                                    <i class="fas fa-file-pdf"></i> Chapter 10: Creative Writing
+                                </a>
+                                <div class="pdf-actions">
+                                    <button class="preview-btn" title="Preview PDF"><i class="fas fa-eye"></i></button>
+                                    <button class="download-btn" title="Download PDF"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Preview Modal -->
+    <div id="pdfModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <div class="modal-controls">
+                    <button id="zoomInBtn" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+                    <button id="zoomOutBtn" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+                    <button id="fullscreenBtn" title="Fullscreen"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="pdf-viewer-container">
+                <div id="pdfLoadingIndicator" class="loading-indicator">
+                    <div class="loading-spinner"></div>
+                    Loading PDF...
+                </div>
+                <div id="pdfProgressBar" class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <div class="select-container">
+                        <label class="select-label">Select Class</label>
+                        <select name="class" required>
+                            <option value="" disabled selected>Choose your class</option>
+                            <option value="5">Class 5</option>
+                            <option value="6">Class 6</option>
+                            <option value="7">Class 7</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Send Message</span>
+                    <span class="button-loader hidden"></span>
+                </button>
+                <div id="formStatus" class="form-status hidden"></div>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 1234567890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>sb150048@birlahighschool.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-location-dot"></i>
+                    <p>Your Location, City</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EduPro Tuition Services. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
